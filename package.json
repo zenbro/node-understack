@@ -1,0 +1,27 @@
+{
+  "name": "understack",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zenbro/node-understack.git"
+  },
+  "keywords": [
+    "Google Closure Compiler",
+    "obfuscation",
+    "error handling"
+  ],
+  "author": "zenbro <capybarov@gmail.com> (https://github.com/zenbro/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zenbro/node-understack/issues"
+  },
+  "homepage": "https://github.com/zenbro/node-understack",
+  "dependencies": {
+    "source-map": "~0.1"
+  }
+}
