@@ -1,7 +1,7 @@
 {
   "name": "understack",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Translate stacktraces from minified JS to readable format",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,6 +12,8 @@
   },
   "keywords": [
     "Google Closure Compiler",
+    "stacktrace",
+    "minification",
     "obfuscation",
     "error handling"
   ],
@@ -31,7 +33,7 @@
   "readme": "ERROR: No README data found!",
   "_id": "understack@0.0.0",
   "dist": {
-    "shasum": "59d26a69763bcc3512c2f25f1a0973c0e85e9653"
+    "shasum": "df96ac2e43f3486b8dde01565e020c9daf651ecf"
   },
   "_from": "https://github.com/zenbro/node-understack/tarball/master",
   "_resolved": "https://github.com/zenbro/node-understack/tarball/master"
