@@ -15,7 +15,11 @@
     "obfuscation",
     "error handling"
   ],
-  "author": "zenbro <capybarov@gmail.com> (https://github.com/zenbro/)",
+  "author": {
+    "name": "zenbro",
+    "email": "capybarov@gmail.com",
+    "url": "https://github.com/zenbro/"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/zenbro/node-understack/issues"
@@ -23,5 +27,12 @@
   "homepage": "https://github.com/zenbro/node-understack",
   "dependencies": {
     "source-map": "~0.1"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "understack@0.0.0",
+  "dist": {
+    "shasum": "59d26a69763bcc3512c2f25f1a0973c0e85e9653"
+  },
+  "_from": "https://github.com/zenbro/node-understack/tarball/master",
+  "_resolved": "https://github.com/zenbro/node-understack/tarball/master"
 }
