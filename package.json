@@ -1,14 +1,14 @@
 {
   "name": "understack",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Translate stacktraces from minified JS to readable format",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/zenbro/node-understack.git"
+  },
+  "dependencies": {
+    "source-map": "~0.1"
   },
   "keywords": [
     "Google Closure Compiler",
@@ -23,18 +23,6 @@
     "url": "https://github.com/zenbro/"
   },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/zenbro/node-understack/issues"
-  },
-  "homepage": "https://github.com/zenbro/node-understack",
-  "dependencies": {
-    "source-map": "~0.1"
-  },
-  "readme": "ERROR: No README data found!",
-  "_id": "understack@0.0.0",
-  "dist": {
-    "shasum": "df96ac2e43f3486b8dde01565e020c9daf651ecf"
-  },
-  "_from": "https://github.com/zenbro/node-understack/tarball/master",
-  "_resolved": "https://github.com/zenbro/node-understack/tarball/master"
+  "bugs": { "url": "https://github.com/zenbro/node-understack/issues" },
+  "homepage": "https://github.com/zenbro/node-understack"
 }
