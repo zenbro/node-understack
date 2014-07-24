@@ -1,6 +1,6 @@
 {
   "name": "understack",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Translate stacktraces from minified JS to readable format",
   "main": "index.js",
   "repository": {
