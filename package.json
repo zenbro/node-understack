@@ -1,8 +1,8 @@
 {
   "name": "understack",
-  "version": "0.0.9",
+  "version": "0.0.12",
   "description": "Translate stacktraces from minified JS to readable format",
-  "main": "index.js",
+  "main": "understack.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/zenbro/node-understack.git"

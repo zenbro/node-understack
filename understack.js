@@ -113,6 +113,8 @@ var readStackTrace = function(data, mapName, callback) {
   setStackHeader(stackTrace);
   checkLastLine(stackTrace);
   stackTrace = stackTrace.map(removeCarriageReturn);
+  // transliterate error message
+  stackTrace[0] = transliteration(stackTrace[0]);
   var lineAndColRegexp = findLineAndColPattern(stackTrace);
   var originStackTrace = [];
   for (var i = 0; i < stackTrace.length; i++) {
@@ -226,4 +228,30 @@ function debugMessage(msg) {
   }
 }
 
+var char_map = {
+  // Russian
+  'А': 'A', 'Б': 'B', 'В': 'V', 'Г': 'G', 'Д': 'D', 'Е': 'E', 'Ё': 'Yo', 'Ж': 'Zh',
+  'З': 'Z', 'И': 'I', 'Й': 'J', 'К': 'K', 'Л': 'L', 'М': 'M', 'Н': 'N', 'О': 'O',
+  'П': 'P', 'Р': 'R', 'С': 'S', 'Т': 'T', 'У': 'U', 'Ф': 'F', 'Х': 'H', 'Ц': 'C',
+  'Ч': 'Ch', 'Ш': 'Sh', 'Щ': 'Sh', 'Ъ': '"', 'Ы': 'Y', 'Ь': "'", 'Э': 'E', 'Ю': 'Yu',
+  'Я': 'Ya',
+  'а': 'a', 'б': 'b', 'в': 'v', 'г': 'g', 'д': 'd', 'е': 'e', 'ё': 'yo', 'ж': 'zh',
+  'з': 'z', 'и': 'i', 'й': 'j', 'к': 'k', 'л': 'l', 'м': 'm', 'н': 'n', 'о': 'o',
+  'п': 'p', 'р': 'r', 'с': 's', 'т': 't', 'у': 'u', 'ф': 'f', 'х': 'h', 'ц': 'c',
+  'ч': 'ch', 'ш': 'sh', 'щ': 'sh', 'ъ': '"', 'ы': 'y', 'ь': "'", 'э': 'e', 'ю': 'yu',
+  'я': 'ya'
+};
+
+function transliteration(s) {
+  var result = '';
+  if (typeof(s) == 'string' && s.length) {
+    for (var i = 0; i < s.length; i++) {
+      var c = s[i];
+      result += char_map[c] ? char_map[c] : c;
+    }
+  }
+  return result;
+}
+
+module.exports.tr = transliteration;
 module.exports.read = readStackTrace;
